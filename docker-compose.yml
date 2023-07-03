@@ -10,6 +10,7 @@ services:
       - ./mylog:/usr/share/filebeat/mylog
       - ./filebeat.yml:/usr/share/filebeat/filebeat.yml
     command: ["--strict.perms=false"]
+    mem_limit: 200MB
     ulimits:
       memlock:
         soft: -1
