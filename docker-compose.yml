@@ -8,7 +8,7 @@ services:
       - /var/run/docker.sock:/host_docker/docker.sock
       - /var/lib/docker:/host_docker/var/lib/docker
       - ./mylog:/usr/share/filebeat/mylog
-      - .config/filebeat.yml:/usr/share/filebeat/filebeat.yml:rw
+      - ./config/filebeat.yml:/usr/share/filebeat/filebeat.yml:rw
     command: ["--strict.perms=false"]
     ulimits:
       memlock:
