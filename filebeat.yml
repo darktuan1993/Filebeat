@@ -5,7 +5,7 @@ filebeat.inputs:
     - /usr/share/filebeat/mylog/*.log
   fields:
       source: Sakura-Test-63
-      beat.hostname: my_host_name
+      beat.hostname: Sakura-Test-63
   fields_under_root: true
 output.logstash:
   hosts: ["10.0.0.16:5044"]
